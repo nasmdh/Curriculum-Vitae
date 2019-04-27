@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.78]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\usepackage{booktabs}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{\Huge Nesredin} % Your first name
+\familyname{\Large Mahmud} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{}{V\"aster\aa s, Sweden }
+\mobile{+46 (0)73 3707 510}
+\email{nesredin.mahmud@mdh.se}
+
+% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{https://www.linkedin.com/in/nasmdh/ \\ 27/04/2019}
+\photo[90pt][0.4pt]{nas} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-1.5cm}
+\section{Education}
+\cventry{2017--Now}{PhD student}{M\"alardalen University}{V\"aster\aa s}{Sweden}{Conducted research on formal modeling and verification (model checking, sat solving), real-time embedded system design (mixed criticality design, software allocation) and optimization (integer linear programming, metaheuristics), prototyping and validation}
+\cvitem{Thesis}{\textit{Design of Assured and Efficient Safety-critical Embedded Systems}}
+\cventry{2012--2013}{MSc., Intelligent Embedded Systems}{M\"alardalen University}{V\"aster\aa s}{Sweden}{Studied real-time embedded systems, participated in fuzzy logic based control design and real-time OS implementation projects}
+\cvitem{Thesis}{\textit{Automated Orchestra for Industrial Automation on Virtualized Multicore Env.}}
+\cventry{2002--2007}{BSc., Computer Science and Eng.}{Mekelle Institute of Technology}{}{Ethiopia}{}  % Arguments not required can be left empty
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experiences}
+\cventry{Jan -- Feb 2019}{PhD Visitor}{\textsc{Laboratoire d'analyse et d'architecture}}{Toulouse}{France}{ Conducted research on the end-to-end timing analysis of distributed automotive software with resource constraints using time petri-nets, and tool chains from LAAS}
+%des syst{\`e}mes
+\cventry{Jan 2014 -- Now}{PhD Visitor}{\textsc{Volvo Group Trucks Technology}}{G\"oteborg}{Sweden}{
+Conducted research on formal verification of automotive software (modeled in Simulink) via model checking, distributed AUTOSAR software allocation optimization via integer linear programming and metaheuristics.}
+
+\cventry{Sep -- Dec 2013}{Internship}{\textsc{ABB Corporate Research Center}}{V\"aster\aa s}{Sweden}{Worked on clock syncronization and evaluation of network performance for real-time embedded software application on a virtualized multicore framework}
+
+\cventry{Sep 2013}{Research Assistant}{\textsc{M\"alardalen University}}{V\"aster\aa s}{}{Worked on an implementation of a multi-resource server on a multi-core platform for predictable execution of mixed-critical applications, i.e., temporal and memory isolation of  video-streaming and safety-critical applications.}
+
+\cventry{May -- Sep 2013}{Master Thesis}{\textsc{ABB Corporate Research Center}}{V\"aster\aa s}{Sweden}{Worked on extending a real-time component framework (FASA) with virtual nodes, a YOCTO experimental setup, which is a build system for custom Linux-based systems, on a virtualized multi-core environment}
+
+\cventry{Sep 2007 -- Aug 2012}{Telecom Research}{\textsc{Ethio ICT Research}}{Addis Ababa}{}{Research on high performance packet processing systems, 3G network, broadband network.}
+
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{2cm}
+\section{Core Competencies}
+\cvitem{Research}{Problem definition, research methods, scientific research writing}
+\cvitem{Software development}{Real-time embedded software design, algorithm design and analysis, programming language design, formal specification, model-checking, SMT solving}
+% \cvitem{Project Leadership}{Project planning and execution, risk analysis, team leadership}
+\cvitem{Programming Languages}{Object-oriented programming, C, C++, Java, Python, Linux Script, Function Block Diagram, Matlab, Simulink.}
+\cvitem{Tools/ Frameworks}{Linux kernel, Yocto build automation, Eclipse Automotive tools (Artop), Xtext, UPPAAL, Xen hypervisor, MATLAB/ SIMULINK, Latex, Amazon Web Services}
+\cvitem{Others}{ISO 26262, ISO 61131-3, AUTOSAR, EAST-ADL}
+
+\begin{minipage}[t]{.5\textwidth}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+\raggedright
+\cvitem{Tigrina}{Mother tangue}{}
+\cvitem{English}{Excellent}{}
+\cvitem{Swedish}{Basic}{}
+%---------------------------
+\end{minipage}% <---------------- Note the use of "%"
+\begin{minipage}[t]{.5\textwidth}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%------------------------------------------------------------------------------
+\section{Interests}
+\raggedleft
+\cvitem{}{Traveling\&Photography}{}
+\cvitem{}{Cooking}{}
+\cvitem{}{Football}{}
+\end{minipage}
+
+\section{Teaching Assistance}
+\begin{tabular}{@{}p{1\linewidth}@{}}
+%\toprule
+$\bullet$ Data Communication course (2015, 2016, 2017)\\[6pt]
+$\bullet$ Data Communication for Embedded Systems 1 (2016)\\[6pt]
+$\bullet$ Project in Embedded Systems course (2014, 2015, 2016, 2017, 2018)\\[6pt]
+$\bullet$ Software Engineering for Real-Time Systems course (2017,2018)%\bottomrule
+\end{tabular}
+
+\section{Software Tools That I Developed}
+\begin{tabular}{@{}p{1\linewidth}@{}}
+%\toprule
+$\bullet$ ArchSyn - a software-allocation program for fault-tolerant AUTOSAR software on a network of ECUs efficiently, with regard to power consumption. URL: \url{https://bitbucket.org/nasmdh/archsyn/src/master/}\\[6pt]
+$\bullet$ PALMYS - a Simulink MDL file parser and program that transform a Simulink model to a network of timed automata for model checking. URL: \url{https://bitbucket.org/nasmdh/palmys/src/master/}\\[6pt]
+$\bullet$ ReSA Toolchain - a domain-specific requirements specification language, and a requirements editor, and analyzer using Z3 SMT solver. URL: \url{https://bitbucket.org/nasmdh/resa/src/master/}
+\end{tabular}
+
+\section{Master Supervision}
+\begin{tabular}{@{}p{1\linewidth}@{}}
+%\toprule
+$\bullet$ Object Detection, Frascarelli, Antonio Ezio, M{\"a}lardalen University, School of Innovation, Design and Engineering, Embedded Systems, V{\"a}ster{\aa}s, Sweden\\[6pt]
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\begin{tabular}{@{}p{1\linewidth}@{}}
+\textbf{Journal papers}\\[6pt]
+$\bullet$ Optimized Allocation of Fault-tolerant Embedded Software with End-to-end Timing Constraints. Nesredin Mahmud, Guillermo Rodriguez-Navas, Hamid Faragardi, Saad Mubeen, Cristina Seceleanu. Journal of Systems and Architecture (JSA) - Under Review.\\[6pt]
+
+$\bullet$ SIMPPAAL - A Framework For Statistical Model Checking of Industrial Simulink Models. Nesredin Mahmud. Predrag Filipovikj, Nesredin Mahmud, Raluca Marinescu, Cristina Seceleanu, Oscar Ljungkrantz , Henrik Lön. In 21st International Symposium on Formal Methods (FM2016). Submitted to Software Engineering and Methodology (TOSEM) Journal - Under Review.\\[6pt]
+\end{tabular}
+\begin{tabular}{@{}p{1\linewidth}@{}}
+\textbf{Conference papers}\\[6pt]
+$\bullet$ Power-aware Allocation of Fault-tolerant Multirate AUTOSAR Applications. Nesredin Mahmud, Guillermo Rodriguez-Navas, Hamid Faragardi, Saad Mubeen, Cristina Seceleanu. In 25th Asia-Pacific Software Engineering Conference (APSEC 2018).\\[6pt]
+
+$\bullet$ Ontology-based Specification of Structured Requirements and Scalable Model checking of Embedded Systems Models. Nesredin Mahmud, Guillermo Rodriguez-Navas, Cristina Seceleanu. Department of Computer Science and Engineering Mälardalen University (MDH 2017).\\[6pt]
+
+$\bullet$ Simulink to UPPAAL Statistical Model Checker: Analyzing Automotive Industrial Systems (Nov 2016). Predrag Filipovikj, Nesredin Mahmud, Raluca Marinescu, Cristina Seceleanu, Oscar Ljungkrantz , Henrik Lönn. In 21st International Symposium on Formal Methods (FM2016).\\[6pt]
+
+$\bullet$ Evaluating Industrial Applicability of Virtualization on a Distributed Multicore Platform (Sep 2014). Nesredin Mahmud, Kristian Sandström, Aneta Vulgarakis Feljan. In 19th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA 2014).\\[6pt]
+
+$\bullet$ The Multi-Resource Server for Predictable Execution on Multi-core Platforms (Apr 2014). Rafia Inam, Nesredin Mahmud, Moris Behnam, Thomas Nolte, Mikael Sjöd. In 20th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2014).\\[6pt]
+
+$\bullet$ Specification and Semantic Analysis of Embedded Systems Requirements: From Description Logic to Temporal Logic. Nesredin Mahmud and, Cristina Seceleanu, Oscar Ljungkrantz. In International Conference on Software Engineering and Formal Methods (SEFM 2017).\\[6pt]
+
+$\bullet$ ReSA Tool: Structured Requirements Specification and SAT-based Consistency-checking. Nesredin Mahmud, Cristina Seceleanu, Oscar Ljungkrantz. In 35th Annual IEEE Software Engineering Workshop (FedCSIS 2016).\\[6pt]
+
+$\bullet$ ReSA: An Ontology-based Requirement Specification Language Tailored to Automotive Systems. Nesredin Mahmud, Cristina Seceleanu, Oscar Ljungkrantz. In 10th IEEE International Symposium on Industrial Embedded Systems (SIES 2015).\\[6pt]
+
+%\\ \bottomrule
+\end{tabular}
+\end{document}
